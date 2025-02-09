@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/Flag.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+}
+
+.outer-green {
+    border: 5px solid #046A38; 
+}
+
+.middle-white {
+    border: 5px solid #ffffff; 
+}
+
+.inner-saffron {
+    border: 5px solid #FF671F; 
+}
+
+nav {
+    background-color: #138808; /* Green background color for the nav bar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the nav bar */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f9932e; /* Saffron color on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #c9f8ff;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 300px;
+    margin: 1em;
+    border-left: 10px solid #ff9933; /* Saffron border */
+    border-right: 10px solid #138808; /* Green border */
+    text-align: center;
+}
+
+h1, h2 {
+    color: #3366FF; /* White color for h1 and h2 */
+}
+
+img.right-image {
+    margin: 0 auto 1em auto;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    display: inline-block;
+    padding: 10px; 
+    background: linear-gradient(45deg, #FF671F, #046A38);
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    .navbar ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    main {
+        padding: 1em;
+    }
+    section {
+        width: 75%; /* Adjust section width for smaller screens */
+    }
+    .info-table {
+        width: 100%; /* Make table fit smaller screens */
+    }
+    img.right-image {
+        width: 90%; /* Make image responsive */
+    }
+    .timeline-list {
+        max-width: 100%; /* Allow timeline to use full width */
+    }
+}
